@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="page-hero" style="--hero-image: url('../images/about-hero-bg.jpg');">
+    <h1>Executive Summary</h1>
+</section>
+
+<section class="about">
+    <div class="about-container">
+        <div class="about-image">
+            <img
+                src="{{ url_for('static', filename='images/about/isolated_biomaterials.png') }}"
+                alt="Isolated Biomaterials"
+            >
+        </div>
+        <div class="about-text"><h2>Isolated Biomaterials</h2></div>
+    </div>
+</section>
+<section class="about">
+    <div class="about-container">
+        <div class="about-image">
+            <img
+                src="{{ url_for('static', filename='images/about/cells-and-complex.jpg') }}"
+                alt="Cells and Complex"
+            >
+        </div>
+        <div class="about-text"><h2>Cells and Complex</h2></div>
+    </div>
+</section>
+<section class="about">
+    <div class="about-container">
+        <div class="about-image">
+            <img
+                src="{{ url_for('static', filename='images/about/organoid.jpg') }}"
+                alt="Organoid"
+            >
+        </div>
+        <div class="about-text"><h2>Organoid</h2></div>
+    </div>
+</section>
+<section class="about">
+    <div class="about-container">
+        <div class="about-image">
+            <img
+                src="{{ url_for('static', filename='images/about/disease-model.jpg') }}"
+                alt="Disease Model"
+            >
+        </div>
+        <div class="about-text"><h2>Disease Model</h2></div>
+    </div>
+</section>
+<section class="about">
+    <div class="about-container">
+        <div class="about-image">
+            <img
+                src="{{ url_for('static', filename='images/about/protein-complex.jpg') }}"
+                alt="Protein & Complex"
+            >
+        </div>
+        <div class="about-text"><h2>Protein & Complex</h2></div>
+    </div>
+</section>
+<section class="about">
+    <div class="about-container">
+        <div class="about-image">
+            <img
+                src="{{ url_for('static', filename='images/about/brain-components.jpg') }}"
+                alt="Brain Components"
+            >
+        </div>
+        <div class="about-text"><h2>Brain Components</h2></div>
+    </div>
+</section>
+<section class="about">
+    <div class="about-container">
+        <div class="about-image">
+            <img
+                src="{{ url_for('static', filename='images/about/dodecanogram.jpg') }}"
+                alt="Dodecanogram"
+            >
+        </div>
+        <div class="about-text"><h2>Dodecanogram</h2></div>
+    </div>
+</section>
+<section class="about">
+    <div class="about-container">
+        <div class="about-image">
+            <img
+                src="{{ url_for('static', filename='images/about/human-subject-data.jpg') }}"
+                alt="Human Subject Data"
+            >
+        </div>
+        <div class="about-text"><h2>Human Subject Data</h2></div>
+    </div>
+</section>
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="footer-bottom">
+        <p>
+            Copyright © National Institute for Materials Science, NIMS Japan,
+            and Indian Institute of Technology, IIT Mandi India 2025
+        </p>
+    </div>
+</footer>
+
+{% endblock %}
