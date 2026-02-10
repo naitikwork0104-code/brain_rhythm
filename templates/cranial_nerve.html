@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-hero cranial_nerve-hero" style="--hero-image: url('../images/cranial_nerve-hero.jpg');">
+    <h1>Cranial Nerve</h1>
+</section>
+
+<section class="simulation-section">
+    <div class="simulation-header">
+        <div class="simulation-title">
+            <h2>Poly Time Crystal Simulation</h2>
+            <p>Nerve-level dynamic non-equilibrium visualization</p>
+        </div>
+        <div class="simulation-actions">
+            <a href="{{ url_for('static', filename='html/cranial_nerve_poly_time_crystal.html') }}" class="btn-secondary" target="_blank">Enlarge Preview</a>
+            <a href="#" class="btn-primary">Download</a>
+        </div>
+    </div>
+
+    <div class="simulation-container">
+        <div class="simulation-card">
+            <iframe src="{{ url_for('static', filename='simulations/cranial_nerve_poly_time_crystal.html') }}" class="simulation-embed" loading="lazy" title="Poly Time Crystal Simulation"></iframe>
+        </div>
+        <div class="simulation-info">
+            <div class="info-card">
+                <h4>Methodology</h4>
+                <p>Real-time rendering of nerve geometries with Floquet-inspired driving.</p>
+            </div>
+            <div class="info-card">
+                <h4>Parameters</h4>
+                <ul>
+                    <li>Representation: volumetric/mesh hybrid</li>
+                    <li>Renderer: WebGL</li>
+                    <li>Sampling: client-side</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h4>Simulation Context</h4>
+                <ul>
+                    <li>Framework: Three.js</li>
+                    <li>Export: STL, SVG</li>
+                    <li>Interaction: OrbitControls</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- DATA FILES SECTION -->
+<section class="data-assets-section">
+    <div class="data-assets-grid">
+        <div class="asset-card">
+            <h3>Structural File</h3>
+            <div class="asset-box">
+                <div class="asset-preview">
+                    <img src="{{ url_for('static', filename='images/cranial_nerve/structural.jpg') }}" alt="Structural file preview">
+                </div>
+                <div class="asset-actions">
+                    <a href="#" class="btn-secondary">Enlarge Preview</a>
+                    <a href="#" class="btn-primary">Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="asset-card">
+            <h3>Resonance Map</h3>
+            <div class="asset-box">
+                <div class="asset-preview">
+                    <img src="{{ url_for('static', filename='images/cranial_nerve/resonance.jpg') }}" alt="Resonance preview">
+                </div>
+                <div class="asset-actions">
+                    <a href="#" class="btn-secondary">Enlarge Preview</a>
+                    <a href="#" class="btn-primary">Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="asset-card">
+            <h3>Electric Field</h3>
+            <div class="asset-box">
+                <div class="asset-preview">
+                    <img src="{{ url_for('static', filename='images/cranial_nerve/electric_field.gif') }}" alt="Electric field preview">
+                </div>
+                <div class="asset-actions">
+                    <a href="#" class="btn-secondary">Enlarge Preview</a>
+                    <a href="#" class="btn-primary">Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="asset-card">
+            <h3>Magnetic Field</h3>
+            <div class="asset-box">
+                <div class="asset-preview">
+                    <img src="{{ url_for('static', filename='images/cranial_nerve/magnetic_field.gif') }}" alt="Magnetic field preview">
+                </div>
+                <div class="asset-actions">
+                    <a href="#" class="btn-secondary">Enlarge Preview</a>
+                    <a href="#" class="btn-primary">Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer"><div class="footer-bottom"><p>Copyright © National Institute for Materials Science, NIMS Japan, and Indian Institute of Technology, IIT Mandi India 2025</p></div></footer>
+
+{% endblock %}

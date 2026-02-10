@@ -28,23 +28,23 @@
                 <li class="dropdown-submenu">
                     <a href="#">Brain Components ▸</a>
                     <ul class="submenu">
-                        <li><a href="#">Cerebellum</a></li>
-                        <li><a href="#">Hippocampus</a></li>
-                        <li><a href="#">Blood Vessel Network</a></li>
-                        <li><a href="#">Hypothalamus</a></li>
+                        <li><a href="{{ url_for('cerebellum') }}">Cerebellum</a></li>
+                        <li><a href="{{ url_for('hippocampus') }}">Hippocampus</a></li>
+                        <li><a href="{{ url_for('blood_vessel_network') }}">Blood Vessel Network</a></li>
+                        <li><a href="{{ url_for('hypothalamus') }}">Hypothalamus</a></li>
                         <li class="dropdown-submenu">
-                            <a href="#">Microtubule ▸</a>
+                            <a href="{{ url_for('microtubule') }}">Microtubule ▸</a>
                             <ul class="submenu">
                                 <li><a href="#">Tubulin</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Cranial Nerve</a></li>
-                        <li><a href="#">Thalamic Body</a></li>
-                        <li><a href="#">Thoracic Nerve</a></li>
-                        <li><a href="#">Cortical Branches</a></li>
-                        <li><a href="#">Neuron</a></li>
-                        <li><a href="#">Skin Nerve Net</a></li>
-                        <li><a href="#">Cortex Domain</a></li>
+                        <li><a href="{{ url_for('cranial_nerve') }}">Cranial Nerve</a></li>
+                        <li><a href="{{ url_for('thalamic_body') }}">Thalamic Body</a></li>
+                        <li><a href="{{ url_for('thoracic_nerve') }}">Thoracic Nerve</a></li>
+                        <li><a href="{{ url_for('cortical_branches') }}">Cortical Branches</a></li>
+                        <li><a href="{{ url_for('neuron') }}">Neuron</a></li>
+                        <li><a href="{{ url_for('skin_nerve_net') }}">Skin Nerve Net</a></li>
+                        <li><a href="{{ url_for('cortex_domain') }}">Cortex Domain</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Resonance Clocks</a></li>

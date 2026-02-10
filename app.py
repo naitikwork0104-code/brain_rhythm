@@ -70,6 +70,54 @@ def garima():
 def surobane():
     return render_template("surobane.html")
 
+@app.route("/brain-components/cerebellum")
+def cerebellum():
+    return render_template("cerebellum.html")
+
+@app.route("/brain-components/hippocampus")
+def hippocampus():
+    return render_template("hippocampus.html")
+
+@app.route("/brain-components/blood-vessel-network")
+def blood_vessel_network():
+    return render_template("blood_vessel_network.html")
+
+@app.route("/brain-components/hypothalamus")
+def hypothalamus():
+    return render_template("hypothalamus.html")
+
+@app.route("/brain-components/microtubule")
+def microtubule():
+    return render_template("microtubule.html")
+
+@app.route("/brain-components/cranial-nerve")
+def cranial_nerve():
+    return render_template("cranial_nerve.html")
+
+@app.route("/brain-components/thalamic-body")
+def thalamic_body():
+    return render_template("thalamic_body.html")
+
+@app.route("/brain-components/thoracic-nerve")
+def thoracic_nerve():
+    return render_template("thoracic_nerve.html")
+
+@app.route("/brain-components/cortical-branches")
+def cortical_branches():
+    return render_template("cortical_branches.html")
+
+@app.route("/brain-components/neuron")
+def neuron():
+    return render_template("neuron.html")
+
+@app.route("/brain-components/skin-nerve-net")
+def skin_nerve_net():
+    return render_template("skin_nerve_net.html")
+
+@app.route("/brain-components/cortex-domain")
+def cortex_domain():
+    return render_template("cortex_domain.html")
+
 if __name__ == "__main__":
     app.run()
 
