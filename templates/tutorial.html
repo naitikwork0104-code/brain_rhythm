@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- HERO -->
+<section
+    class="page-hero"
+    style="--hero-image: url('../images/resonance-hero-bg.jpg');"
+>
+    <h1>Resonance clocks</h1>
+</section>
+
+<!-- BLUE STRIP SECTION -->
+<section class="section-strip-blue">
+    <h2>Control Panel for operating the Artificial Brain: Both Artificial Brains wear a EEG proprietary device</h2>
+</section>
+
+<!-- LARGE IMAGE SECTION -->
+<section class="page-content page-content-white">
+    <div class="large-image-container">
+        <img
+            src="{{ url_for('static', filename='images/control-panel.jpg') }}"
+            alt="Control Panel"
+        >
+    </div>
+</section>
+
+<!-- BLUE STRIP SECTION -->
+<section class="section-strip-blue">
+    <h2>Both Artificial Brains wear a DDG proprietary device</h2>
+</section>
+
+<!-- LARGE IMAGE SECTION -->
+<section class="page-content page-content-white">
+    <div class="large-image-container">
+        <img
+            src="{{ url_for('static', filename='images/device.jpg') }}"
+            alt="DDG Device"
+        >
+    </div>
+</section>
+
+<!-- BLUE STRIP SECTION -->
+<section class="section-strip-blue">
+    <h2>Photo Album</h2>
+</section>
+
+<section class="photo-grid-section">
+    <div class="photo-grid-container">
+        <div class="photo-item">
+            <img src="{{ url_for('static', filename='images/tutorial/image_4.jpg') }}"
+                 alt="Electrode connections on brain structure">
+        </div>
+        <div class="photo-item">
+            <img src="{{ url_for('static', filename='images/tutorial/image_5.jpg') }}"
+                 alt="EEG and DDG devices on artificial brain">
+        </div>
+        <div class="photo-item">
+            <img src="{{ url_for('static', filename='images/tutorial/image_6.jpg') }}"
+                 alt="Control panel close-up">
+        </div>
+        <div class="photo-item">
+            <img src="{{ url_for('static', filename='images/tutorial/image_7.jpg') }}"
+                 alt="Research team working on the project">
+        </div>
+        <div class="photo-item">
+            <img src="{{ url_for('static', filename='images/tutorial/image_8.jpg') }}"
+                 alt="Electrode connections on brain structure">
+        </div>
+        <div class="photo-item">
+            <img src="{{ url_for('static', filename='images/tutorial/image_9.jpg') }}"
+                 alt="EEG and DDG devices on artificial brain">
+        </div>
+        <div class="photo-item">
+            <img src="{{ url_for('static', filename='images/tutorial/image_10.jpg') }}"
+                 alt="Control panel close-up">
+        </div>
+        <div class="photo-item">
+            <img src="{{ url_for('static', filename='images/tutorial/image_11.jpg') }}"
+                 alt="Research team working on the project">
+        </div>
+        <div class="photo-item">
+            <img src="{{ url_for('static', filename='images/tutorial/image_12.jpg') }}"
+                 alt="Electrode connections on brain structure">
+        </div>
+        <div class="photo-item">
+            <img src="{{ url_for('static', filename='images/tutorial/image_13.jpg') }}"
+                 alt="EEG and DDG devices on artificial brain">
+        </div>
+        <div class="photo-item">
+            <img src="{{ url_for('static', filename='images/tutorial/image_14.jpg') }}"
+                 alt="Control panel close-up">
+        </div>
+        <div class="photo-item">
+            <img src="{{ url_for('static', filename='images/tutorial/image_15.jpg') }}"
+                 alt="Research team working on the project">
+        </div>
+        <div class="photo-item">
+            <img src="{{ url_for('static', filename='images/tutorial/image_16.jpg') }}"
+                 alt="Electrode connections on brain structure">
+        </div>
+        <div class="photo-item">
+            <img src="{{ url_for('static', filename='images/tutorial/image_17.jpg') }}"
+                 alt="EEG and DDG devices on artificial brain">
+        </div>
+        <div class="photo-item">
+            <img src="{{ url_for('static', filename='images/tutorial/image_18.jpg') }}"
+                 alt="Control panel close-up">
+        </div>
+    </div>
+</section>
+
+<!--  VIDEO SECTION -->
+<section class="page-content">
+    <h2 class="section-title">
+        Communication Between Both Brains - EEG & DDG profile
+    </h2>
+
+    <div class="video-container">
+        <div class="video-frame">
+            <video
+                controls
+                preload="metadata"
+                playsinline
+            >
+                <source
+                    src="https://data.abhinandan.tech/brain/eeg-and-ddg/tutorial/Communication_Between_Two_Brains___EEG_DDG_profile.webm"
+                    type="video/webm"
+                >
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="footer-bottom">
+        <p>
+            Copyright © National Institute for Materials Science, NIMS Japan,
+            and Indian Institute of Technology, IIT Mandi India 2025
+        </p>
+    </div>
+</footer>
+
+{% endblock %}

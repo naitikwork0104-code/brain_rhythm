@@ -118,6 +118,46 @@ def skin_nerve_net():
 def cortex_domain():
     return render_template("cortex_domain.html")
 
+@app.route("/brain-components/resonance-clocks")
+def resonance_clocks():
+    return render_template("resonance_clocks.html")
+
+@app.route("/brain-components/eeg-ddg")
+def eeg_ddg():
+    return render_template("eeg_ddg.html")
+
+@app.route("/brain-components/eeg-ddg/tutorial")
+def tutorial():
+    return render_template("tutorial.html")
+
+@app.route("/brain-components/eeg-ddg/eeg-music")
+def eeg_music():
+    return render_template("eeg_music.html")
+
+@app.route("/brain-components/eeg-ddg/ddg-device")
+def ddg_device():
+    return render_template("ddg_device.html")
+
+@app.route("/brain-components/eeg-ddg/both-artificial-brains")
+def both_artificial_brains():
+    return render_template("both_artificial_brains.html")
+
+@app.route("/brain-components/eeg-ddg/artificial-vs-human-brain")
+def artificial_vs_human_brain():
+    return render_template("artificial_vs_human_brain.html")
+
+@app.route("/brain-components/eeg-ddg/both-human-brains")
+def both_human_brains():
+    return render_template("both_human_brains.html")
+
+@app.route("/brain-components")
+def brain_components():
+    return render_template("brain_components.html")
+
+@app.route("/brain-components/microtubule/tubulin")
+def tubulin():
+    return render_template("tubulin.html")
+
 if __name__ == "__main__":
     app.run()
 

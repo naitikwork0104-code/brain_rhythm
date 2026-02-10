@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- HERO -->
+<section
+    class="page-hero"
+    style="--hero-image: url('../images/ddg-device-hero.jpg');"
+>
+    <h1>
+        DDG Device First Prototype
+    </h1>
+</section>
+
+<section class="brain-video-section">
+    <div class="brain-video-grid">
+
+        <div class="brain-video-card">
+            <h3>DDG First Prototype</h3>
+            <video controls preload="metadata" playsinline>
+                <source src="https://data.abhinandan.tech/brain/eeg-and-ddg/ddg-device-first-prototype/DDG_First_prototype.mkv" type="video/webm">
+            </video>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="footer-bottom">
+        <p>
+            Copyright © National Institute for Materials Science, NIMS Japan,
+            and Indian Institute of Technology, IIT Mandi India 2025
+        </p>
+    </div>
+</footer>
+
+{% endblock %}

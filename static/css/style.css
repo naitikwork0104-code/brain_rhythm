@@ -1034,8 +1034,8 @@ h1, h2, h3, h4, h5, h6,
 
 /* CONTENT (text-only) */
 .page-content {
-    background: #f3e6e0;
-    padding: 140px 40px;
+    background: #f6e9e1;
+    padding: 60px 40px;
     min-height: calc(100vh - 420px);
 }
 
@@ -1483,4 +1483,247 @@ h1, h2, h3, h4, h5, h6,
 /* Slightly larger image area to match preview */
 .asset-preview img {
     height: 170px;
+}
+
+
+/* ================================
+   LARGE IMAGE PAGE
+================================ */
+
+.large-image-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.large-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+/* White background ONLY for large image section on this page */
+.page-content-white {
+    background: #ffffff;
+}
+
+/* ================================
+   CENTERED VIDEO SECTION
+================================ */
+
+.section-title {
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+/* Outer container */
+.video-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* Video frame keeps height even before play */
+.video-frame {
+    width: 100%;                 /* matches screenshot feel */
+    aspect-ratio: 16/9;         /* vertical video */
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Actual video */
+.video-frame video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;          /* NO CROPPING */
+    background: #000;
+}
+
+/* ================================
+   BLUE STRIP SECTION
+================================ */
+
+.section-strip-blue {
+    width: 100%;
+    background: #202020; /* strong blue like screenshot */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.section-strip-blue h2 {
+    margin: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+/* ================================
+   BRAIN VIDEO GRID
+================================ */
+
+.brain-video-section {
+    background: #f3e6e0; /* same beige tone */
+    padding: 100px 40px;
+}
+
+.brain-video-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+}
+
+/* Individual card */
+.brain-video-card {
+    text-align: center;
+}
+
+.brain-video-card h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 18px;
+    color: #111;
+}
+
+/* Video styling */
+.brain-video-card video {
+    width: 100%;
+    aspect-ratio: 16/9; /* vertical like your examples */
+    background: #000;
+    border-radius: 6px;
+    object-fit: contain;
+}
+
+
+/* ================================
+   PHOTO GRID SECTION
+================================ */
+
+.photo-grid-section {
+    background: #f6e9e1;
+    padding: 80px 40px;
+}
+
+.photo-grid-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+/* Individual photo card */
+.photo-item {
+    aspect-ratio: 4/5;
+    border-radius: 6px;
+    overflow: hidden; /* 🔑 this makes radius actually work */
+    background: #fff;
+}
+
+/* Images */
+.photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* NO cropping */
+    display: block;
+}
+
+/* SECTION */
+.ddg-section {
+    padding: 80px 40px;
+    background: #f6e9e1;
+}
+
+/* GRID */
+.ddg-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+/* CARD — single source of truth */
+.ddg-card {
+    width: 100%;
+    aspect-ratio: 4 / 3;   /* 👈 NOT square */
+    background: #f6e9e1;
+    border-radius: 6px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MEDIA */
+.ddg-card img,
+.ddg-card video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     /* 👈 consistent fill */
+    background: #f6e9e1;
+}
+
+.ddg-links-section {
+    background: #a6d2f7;
+    padding: 80px 40px;
+}
+
+.ddg-links-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ddg-links-container h2 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.ddg-links {
+    padding-left: 20px;
+    color: #000;
+}
+
+.ddg-links li {
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+.ddg-links a {
+    color: #000;
+}
+
+.ddg-paper-section {
+    background: #f3e7e2; /* same light peach tone */
+    padding: 80px 40px;
+}
+
+.ddg-paper-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.ddg-paper-image img {
+    width: 100%;
+    border-radius: 6px;
+    display: block;
 }

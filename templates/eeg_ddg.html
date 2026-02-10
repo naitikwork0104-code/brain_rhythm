@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- HERO -->
+<section
+    class="page-hero"
+    style="--hero-image: url('../images/eeg-ddg-hero.jpg');"
+>
+    <h1>
+        Electroencephalogram (EEG) and<br>
+        Dodecanogram (DDG)
+    </h1>
+</section>
+
+<!-- STRIP SECTION -->
+<section class="section-strip-blue">
+    <h2>Construction of Brain Components</h2>
+</section>
+
+<section class="brain-video-section">
+    <div class="brain-video-grid">
+
+        <div class="brain-video-card">
+            <h3>Limbic system</h3>
+            <video controls preload="metadata" playsinline>
+                <source src="https://data.abhinandan.tech/brain/eeg-and-ddg/Construction_of_limbic_system.webm" type="video/webm">
+            </video>
+        </div>
+
+        <div class="brain-video-card">
+            <h3>Gel Cavity Synthesis of Brain components</h3>
+            <video controls preload="metadata" playsinline>
+                <source src="https://data.abhinandan.tech/brain/eeg-and-ddg/Gel_Cavity_Synthesis_of_Brain_components.webm" type="video/webm">
+            </video>
+        </div>
+
+        <div class="brain-video-card">
+            <h3>Spinal cord</h3>
+            <video controls preload="metadata" playsinline>
+                <source src="https://data.abhinandan.tech/brain/eeg-and-ddg/Spinal_cord.webm" type="video/webm">
+            </video>
+        </div>
+
+        <div class="brain-video-card">
+            <h3>Skeleton of nervous system 1</h3>
+            <video controls preload="metadata" playsinline>
+                <source src="https://data.abhinandan.tech/brain/eeg-and-ddg/Nervous_System__Body.webm" type="video/webm">
+            </video>
+        </div>
+
+        <div class="brain-video-card">
+            <h3>Skeleton of nervous system 2</h3>
+            <video controls preload="metadata" playsinline>
+                <source src="https://data.abhinandan.tech/brain/eeg-and-ddg/Nervous_System__Brain_Body.webm" type="video/webm">
+            </video>
+        </div>
+        
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="footer-bottom">
+        <p>
+            Copyright © National Institute for Materials Science, NIMS Japan,
+            and Indian Institute of Technology, IIT Mandi India 2025
+        </p>
+    </div>
+</footer>
+
+{% endblock %}

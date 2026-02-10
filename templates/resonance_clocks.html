@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- HERO -->
+<section
+    class="page-hero"
+    style="--hero-image: url('../images/resonance-hero-bg.jpg');"
+>
+    <h1>Resonance clocks</h1>
+</section>
+
+<!-- LARGE IMAGE SECTION -->
+<section class="page-content page-content-white">
+    <div class="large-image-container">
+        <img
+            src="{{ url_for('static', filename='images/resonance-clocks-map.jpg') }}"
+            alt="Integrated resonance clocks brain model"
+        >
+    </div>
+</section>
+
+<!-- 3D CLOCKING MODEL VIDEO -->
+<section class="page-content">
+    <h2 class="section-title">
+        3D clocking model of the human brain
+    </h2>
+
+    <div class="video-container">
+        <div class="video-frame">
+            <video
+                controls
+                preload="metadata"
+                playsinline
+            >
+                <source
+                    src="https://data.abhinandan.tech/brain/resonance-clocks/3D_Clocking_Model_of_Human_Brain.webm"
+                    type="video/webm"
+                >
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="footer-bottom">
+        <p>
+            Copyright © National Institute for Materials Science, NIMS Japan,
+            and Indian Institute of Technology, IIT Mandi India 2025
+        </p>
+    </div>
+</footer>
+
+{% endblock %}
