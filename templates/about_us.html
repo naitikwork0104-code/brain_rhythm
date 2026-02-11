@@ -1,0 +1,214 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="page-hero" style="--hero-image: url('../images/about-us-bg.jpg');">
+    <h1>About Us</h1>
+</section>
+
+<!-- OUR TEAM -->
+<section class="team-section">
+    <div class="team-container">
+
+        <div class="team-member">
+            <img
+                src="{{ url_for('static', filename='images/about_us/pushpendra.jpg') }}"
+                alt="Pushpendra Singh"
+            >
+
+            <h4>Assistant Professor</h4>
+
+            <p class="member-name">
+                <a href="https://iksmha.iitmandi.ac.in/fstaff.php" target="_blank">Pushpendra Singh</a>
+            </p>
+
+            <p class="member-country">IIT Mandi, India</p>
+        </div>
+
+        <div class="team-member">
+            <img
+                src="{{ url_for('static', filename='images/about_us/anirban.jpg') }}"
+                alt="Anirban Bandyopadhyay"
+            >
+
+            <h4>Principal Scientist</h4>
+
+            <p class="member-name">
+                <a href="https://www.nims.go.jp/nanophys6/Anirban%20Bandyopadhyay/site/ProfileContact.htm" target="_blank">Anirban Bandyopadhyay</a>
+            </p>
+
+            <p class="member-country">NIMS, Japan</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT: BOOK & VIDEO -->
+<section class="about-book-section">
+    <div class="about-book-container">
+
+        <!-- LEFT: BOOK COVER -->
+        <div class="about-book-cover">
+            <img
+                src="{{ url_for('static', filename='images/about_us/biological_antenna.jpg') }}"
+                alt="Biological Antenna to the Humanoid Bot"
+            >
+        </div>
+
+        <!-- RIGHT: TEXT + VIDEO -->
+        <div class="about-book-content">
+            <p class="about-description">
+                NeuroResonance database developed by Dr. Pushpendra Singh during his doctoral
+                studies at Research Center for Materials Nanoarchitectonics (MANA) at NIMS,
+                Japan from 2016 to 2021.
+            </p>
+
+            <p class="about-description">
+                This database serves as a comprehensive repository of neural response patterns
+                to various nanomaterial stimuli, offering unprecedented insights into
+                brain-material interactions. Dr. Singh now continues to expand and refine
+                this work under the guidance of Prof. Anirban Bandyopadhyay.
+            </p>
+
+            <p class="about-description">
+                For more information about the database, follow this
+                <a href="https://tinyurl.com/yb2cd8at" class="about-link">book-link</a>.
+            </p>
+
+            <h4 class="about-lab-title">
+                Sapiotectronics Lab, IKSMHA Centre
+            </h4>
+
+            <!-- VIDEO -->
+            <div class="about-video-frame">
+                <video controls preload="metadata">
+                    <source
+                        src="https://data.abhinandan.tech/misc/sapiotectronics_intro.mp4"
+                        type="video/mp4"
+                    >
+                </video>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact-affiliation">
+    <h2 class="contact-affiliation-title">Contact Us</h2>
+    <div class="contact-grid">
+
+        <div class="contact-card">
+            <div class="logo-box">
+                <img src="{{ url_for('static', filename='media/email.png') }}" alt="Contact">
+            </div>
+            <h4>Contact</h4>
+            <a href="mailto:pushpendra@iitmandi.ac.in">pushpendra@iitmandi.ac.in</a>
+            <a href="mailto:anirban.bandyo@gmail.com">anirban.bandyo@gmail.com</a>
+        </div>
+
+        <div class="contact-card">
+            <div class="logo-box">
+                <img src="{{ url_for('static', filename='media/nims.png') }}" alt="NIMS">
+            </div>
+            <h4>Affiliation</h4>
+            <a href="https://www.nims.go.jp/eng/">National Institute for Materials Science, Japan</a>
+        </div>
+
+        <div class="contact-card">
+            <div class="logo-box">
+                <img src="{{ url_for('static', filename='media/iit-mandi.png') }}" alt="IIT Mandi">
+            </div>
+            <h4>Affiliation</h4>
+            <a href="https://www.iitmandi.ac.in/">Indian Institute of Technology, Mandi, India</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="chronology-section">
+    <div class="chronology-container">
+
+        <h2 class="chronology-title">Chronology of Database</h2>
+
+        <div class="timeline">
+
+            <!-- ITEM 1 -->
+            <div class="timeline-item">
+                <div class="timeline-card">
+                    <img
+                        src="{{ url_for('static', filename='media/nims.png') }}"
+                        alt="NIMS Japan"
+                        class="timeline-logo"
+                    >
+
+                    <div class="timeline-content">
+                        <h4>21 August 2021</h4>
+                        <p>
+                            <strong>NIMS, Japan</strong> launched the NeuroResonance Database,
+                            establishing the first structured repository of rhythm-engineered
+                            neural response data.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="timeline-item">
+                <div class="timeline-card">
+                    <img
+                        src="{{ url_for('static', filename='media/iit-mandi.png') }}"
+                        alt="IIT Mandi"
+                        class="timeline-logo"
+                    >
+
+                    <div class="timeline-content">
+                        <h4>1 October 2024</h4>
+                        <p>
+                            <strong>IIT Mandi, India</strong> joined the database initiative,
+                            expanding the scope to include applied neuro-engineering
+                            and biomedical rhythm studies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ITEM 3 -->
+            <div class="timeline-item">
+                <div class="timeline-card">
+                    <img
+                        src="{{ url_for('static', filename='media/iit-mandi.png') }}"
+                        alt="IIT Mandi"
+                        class="timeline-logo"
+                    >
+                    <div class="timeline-content">
+                        <h4>March 2025</h4>
+                        <ul>
+                            <li>
+                                <strong>March 15, 2025:</strong> Sapiotectronics Lab, IIT Mandi
+                                restructured the entire NeuroResonance Database.
+                            </li>
+                            <li>
+                                <strong>March 31, 2025:</strong> Published research works
+                                related to DDG were updated.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="footer-bottom">
+        <p>
+            Copyright © National Institute for Materials Science, NIMS Japan,
+            and Indian Institute of Technology, IIT Mandi India 2025
+        </p>
+    </div>
+</footer>
+
+{% endblock %}
